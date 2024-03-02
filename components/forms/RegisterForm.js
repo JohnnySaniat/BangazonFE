@@ -60,7 +60,7 @@ function RegisterForm() {
       <Form.Group className="mb-3" controlId="formBasicIsSeller">
         <Form.Check type="checkbox" label="Are you a seller?" checked={formData.isSeller} onChange={handleCheckboxChange} />
       </Form.Group>
-      <Button variant="primary" type="submit">
+      <Button variant="danger" type="submit">
         Submit
       </Button>
     </Form>

@@ -1,44 +1,43 @@
-# React/Next.js Django Auth Template
+# Bangazon
 
-## Topics
-- [Get Started](#getting-started)
-- [Starting the Project](#starting-the-project)
-___
-## Getting Started
-### Use Template
-#### 1. To get started, click the GREEN "Use this Template" button at the top of the repo
-<img width="915" alt="Screen Shot 2022-07-06 at 12 54 01 PM" src="https://user-images.githubusercontent.com/29741570/177612998-4aac9237-5a1e-4f13-8ae0-468587521564.png">
+## Overview
+This project is a frontend application for a shop platform called Bangazon. It allows users to view products, add products to their cart, place orders, manage their account, and perform other related actions.
 
-#### 2. Make sure YOUR github account is selected in the dropdown and name your project
-<img width="763" alt="Screen Shot 2022-07-06 at 12 54 48 PM" src="https://user-images.githubusercontent.com/29741570/177613126-dd38f678-7553-4f27-8a4a-75680f14d71e.png">
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-#### 3. Clone your new repo to your local machine
-#### 4. Go to the **NEXT** section
-
-## Starting the Project
-1. Create a Firebase project and set up authentication. Use [these videos](https://vimeo.com/showcase/codetracker-firebase) as a refresher if needed.
-1. Create a `.env` file at the root of the project
-1. Copy/Paste the contents of the `.env.sample` file to your newly created `.env` file.
-1. Copy over all of your Firebase values into the `.env` file.
-1. Open the `package.json` file and change the `name` property to the name of your application, and `author` to  your name.
-1. From your command line, be in the root directory and run `npm install` OR `npm i` for short.
-1. Next, run `npm run prepare`. This command sets up husky to track eslint errors on commit that will make your deploy fail on Netlify.
-1. To start your application, run `npm run dev`. THIS IS THE COMMAND YOU WILL USE TO RUN YOUR DEVELOPMENT SERVER FROM NOW ON.
-1. Open [http://localhost:3000](http://localhost:3000) with your browser.
-
-### If you see this, you are set to go!
-<img width="450" alt="Screen Shot 2022-07-06 at 1 07 27 PM" src="https://user-images.githubusercontent.com/29741570/177615077-9b6a75bc-0260-4d29-bb88-bd95a3140687.png">
+## Installation
+To install and run this application locally, follow these steps:
+1. Clone the repository to your local machine:
+2. Navigate to the project directory:
+3. Install dependencies using npm or yarn:
+4. Create a `.env` file in the root directory and configure environment variables if necessary.
+5. Start the development server:
 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Usage
+Once the application is running, you can access it in your web browser at `http://localhost:3000`. Explore the various features of the shop application including browsing products, adding products to cart, placing orders, managing user account, etc.
 
-**NOTES:** 
-- If you see the following error, you did not follow all the setup steps correctly and failed to add your Firebase creds. Go back and do that NOW.
+## Folder Structure
+- `.husky/`: Configuration for Husky Git hooks.
+- `.next/`: Next.js build output directory.
+- `api/`: Backend API mock data and utility functions.
+- `components/`: React components organized by type (e.g., cards, forms, searchbars).
+- `images/`: Image assets used in the application.
+- `pages/`: Next.js pages for routing and rendering components.
+- `public/`: Public assets like favicon.
+- `styles/`: Global CSS styles.
+- `utils/`: Utility functions and context management.
+- `.env`: Environment variables.
+- `.eslintignore`, `.eslintrc.js`, `.gitignore`, `.prettierrc`: ESLint and Prettier configurations.
+- `next.config.js`: Next.js configuration.
+- `package.json`, `package-lock.json`: Node.js package information.
+- `README.md`: This file, providing an overview of the project.
 
-<img width="1043" alt="Screen Shot 2022-07-06 at 11 18 45 AM" src="https://user-images.githubusercontent.com/29741570/177612501-c2628f18-4bbd-4de9-aae6-27ffba1172d6.png">
-        
-## Learn More about Next.js
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Find more of my projects on [GitHub](https://github.com/johnnysaniat).
