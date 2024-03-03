@@ -48,7 +48,6 @@ function ProductForm({ obj }) {
     <Form onSubmit={handleSubmit}>
       <h2 className="text-white mt-5">{obj.id ? 'Update' : 'Create'} a Product</h2>
 
-      {/* Product Name */}
       <FloatingLabel controlId="productName" label="Product Name" className="mb-3">
         <Form.Control
           type="text"
@@ -59,8 +58,6 @@ function ProductForm({ obj }) {
           required
         />
       </FloatingLabel>
-
-      {/* Image URL */}
       <FloatingLabel controlId="image" label="Product Image URL" className="mb-3">
         <Form.Control
           type="url"
@@ -72,7 +69,6 @@ function ProductForm({ obj }) {
         />
       </FloatingLabel>
 
-      {/* Product Type Select */}
       <FloatingLabel controlId="productType" label="Product Type">
         <Form.Select
           aria-label="Product Type"
@@ -91,7 +87,6 @@ function ProductForm({ obj }) {
         </Form.Select>
       </FloatingLabel>
 
-      {/* Price */}
       <FloatingLabel controlId="price" label="Price" className="mb-3">
         <Form.Control
           type="number"
@@ -103,7 +98,6 @@ function ProductForm({ obj }) {
         />
       </FloatingLabel>
 
-      {/* Quantity */}
       <FloatingLabel controlId="quantity" label="Quantity" className="mb-3">
         <Form.Control
           type="number"
@@ -115,8 +109,7 @@ function ProductForm({ obj }) {
         />
       </FloatingLabel>
 
-      {/* SUBMIT BUTTON */}
-      <Button className="user-card-button" type="submit">{obj.id ? 'Update' : 'Create'} Product</Button>
+      <Button className="user-card-button" variant="danger" type="submit">{obj.id ? 'Update' : 'Create'} Product</Button>
     </Form>
   );
 }
